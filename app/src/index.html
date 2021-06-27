@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textile Trace Digital</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<style>
+    input {
+        display: block;
+        margin-bottom: 12px;
+    }
+</style>
+<body>
+<h1>Cotton Token DAPP</h1>
+
+<hr>
+<span id="name">Token: </span>
+<span id="symbol"></span>
+<br>
+<span id="decimals">Decimals: </span>
+<br>
+<span id="contractAddressElement">Contrat Address: </span>
+<br>
+<span id="blockNoElement">Block No: </span>
+<br>
+
+
+<span id="structElement">Cotton Struct: </span>
+<br>
+<hr>
+<span></span>
+<h1>Transfer Token</h1>
+<label for="recipient">Recipient:</label><input type="text" id="recipient" value="0x1F4b4fc5328d67a4EF127A3E25656D36042E1F1A"></input>
+<label for="amount">Amount:</label><input type="text" id="amount" value="100"></input>
+<label for="form">Form:</label><input type="text" id="form" value="yarn"></input>
+<label for="text">Certificate:</label><input type="text" id="certificate" value="regular"></input>
+<label for="ref">Reference:</label><input type="text" id="ref" value="Zara Order"></input>
+<button id="transfer" onclick="App.transfer()">Transfer</button>
+<br>
+<br>
+<span>From: </span><span id="from"></span>
+<br>
+<span>To: </span><span id="to"></span>
+<br>
+<span>Value: </span><span id="value"></span>
+<br>
+<span>Transaction Hash: </span><span id="transactionHash"></span>
+<br>
+<span>Gas: </span><span id="gas"></span>
+<br>
+<hr>
+<h1>Event of Transfer (traceCotton) </h1>
+<span id="transferEvent"></span>
+<br>
+<hr>
+
+
+<h1>Get the symbol of the token</h1>
+<br><br><button onclick="App.getSymbol()">Get the Symbol</button>
+<br>
+
+<h1>Get the name of the token</h1>
+<br><br><button onclick="App.getName()">Get the Name</button>
+
+<br>
+<span id="status"></span>
+
+<br>
+<script src="index.js"></script>
+</body>
+</html>

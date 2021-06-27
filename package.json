@@ -1,0 +1,29 @@
+{
+  "name": "cottontoken",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dr. Berat Çelik",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "browserify": "^17.0.0",
+    "ethers": "^5.3.1",
+    "hd-wallet": "^9.1.1",
+    "solc": "^0.8.0",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "web3": "^1.3.6",
+    "web3-eth": "^1.3.6"
+  },
+  "keywords": [],
+  "description": "How to Create ERC-20 Token Get started with the exercise, remember you will need to have installed the latest version of Truffle (v5)",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
